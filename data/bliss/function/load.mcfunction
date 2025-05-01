@@ -1,0 +1,1 @@
+tellraw @a {"color":"gold","text":"Loaded Bliss 0.0.1"}
