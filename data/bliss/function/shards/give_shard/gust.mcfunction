@@ -1,0 +1,5 @@
+# Gem Description:
+# Puff gem creates a bubble shield around the player for 20s 
+# Upgraded gives shield and regen 2 around player for 30s
+# Downgraded gives smaller bubble for 10s
+give @s minecraft:test_block[use_cooldown={seconds:3},tooltip_display={hidden_components:["enchantments"]},enchantment_glint_override=false,enchantments={vanishing_curse:10},item_model="bliss_rec:gust_shard",block_state={mode:"fail"},item_name={text:"Gust Shard",color:white},consumable={on_consume_effects:[{type:play_sound,sound:"minecraft:block.amethyst_block.chime",effects:[{ id:"minecraft:night_vision",amplifier:1,duration:200,ambient:false,show_particles:false,show_icon:false},{ id:"minecraft:darkness",amplifier:1,duration:200,ambient:true,show_particles:false,show_icon:false},{ id:"minecraft:instant_damage",amplifier:1,duration:200,ambient:true,show_particles:false,show_icon:false}]}],animation:block,consume_seconds:2147483647,has_consume_particles:false,sound:"minecraft:block.amethyst_block.chime"}]

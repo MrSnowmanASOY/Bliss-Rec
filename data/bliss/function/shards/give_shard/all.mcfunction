@@ -1,0 +1,9 @@
+function bliss:shards/give_shard/astra
+function bliss:shards/give_shard/base
+function bliss:shards/give_shard/fire
+function bliss:shards/give_shard/gust
+function bliss:shards/give_shard/heart
+function bliss:shards/give_shard/pulse
+function bliss:shards/give_shard/speed
+function bliss:shards/give_shard/strength
+function bliss:shards/give_shard/wealth
