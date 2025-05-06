@@ -1,3 +1,5 @@
+tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","text":" | "},{"color":"#b700ff","text":"[Function]"},{"color":"#ffffff","text":" | "},{"color":"#00ff22","selector":"@s"},{"color":"#ffffff","text":" | "},{"color":"#00f7ff","text":"shards/give_shard/fire"}]
+
 # Gem Description:
 # Fire gem gives fire resistance for 1 minute
 # Upgraded gives fire resistance 2 minutes and regen 3 for 10s 

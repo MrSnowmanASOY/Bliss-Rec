@@ -1,3 +1,5 @@
+tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","text":" | "},{"color":"#b700ff","text":"[Function]"},{"color":"#ffffff","text":" | "},{"color":"#00ff22","selector":"@s"},{"color":"#ffffff","text":" | "},{"color":"#00f7ff","text":"shards/give_shard/gust"}]
+
 # Gem Description:
 # Puff gem creates a bubble shield around the player for 20s 
 # Upgraded gives shield and regen 2 around player for 30s

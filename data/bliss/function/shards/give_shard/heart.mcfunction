@@ -1,3 +1,5 @@
+tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","text":" | "},{"color":"#b700ff","text":"[Function]"},{"color":"#ffffff","text":" | "},{"color":"#00ff22","selector":"@s"},{"color":"#ffffff","text":" | "},{"color":"#00f7ff","text":"shards/give_shard/heart"}]
+
 # Gem Description:
 # Life gem removes 2 hearts per crit hit and if ability is used when they die it will come up with a totem affect bringing them up to full health
 # Upgraded gem deals 3 hearts per crit and if ability is used when they die it will come up with a totem affect bringing them up to full health with + 5 hearts 

@@ -1,3 +1,5 @@
+tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","text":" | "},{"color":"#b700ff","text":"[Function]"},{"color":"#ffffff","text":" | "},{"color":"#00ff22","selector":"@s"},{"color":"#ffffff","text":" | "},{"color":"#00f7ff","text":"shards/give_shard/wealth"}]
+
 # Gem Description:
 # Wealth gem gives hero of the village 3
 # Upgraded gives hero of the village 5 

@@ -1,3 +1,5 @@
+tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","text":" | "},{"color":"#ff0080","text":"[Shard]"},{"color":"#ffffff","text":" | "},{"color":"#00ff22","selector":"@s"},{"color":"#ffffff","text":" | "},{"color":"#00f7ff","text":"Used Pulse Shard"}]
+
 # Gem Description:
 # Flux gem shoots out a powerfull warden beam dealing up to 4 hearts
 # Upgraded shoots warden beam dealing 6 hearts 
@@ -32,7 +34,11 @@ execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^19 0.2 0.2 0.
 execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^20 0.2 0.2 0.2 0 10 force
 
 # Make the damage bubbles
-execute at @s as @s anchored eyes positioned ^ ^ ^3 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
+
+execute at @s as @s anchored eyes positioned ^ ^ ^1 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^2 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
+
+execute at @s as @s anchored eyes positioned ^ ^ ^3 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^4 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^5 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^6 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
@@ -40,7 +46,7 @@ execute at @s as @s anchored eyes positioned ^ ^ ^7 run execute as @e[distance=.
 execute at @s as @s anchored eyes positioned ^ ^ ^8 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^9 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^10 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^11 run execute as @e[distance=..1] run damage @s 20 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^11 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^12 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^13 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^14 run execute as @e[distance=..2] run damage @s 18 bliss:player_boom

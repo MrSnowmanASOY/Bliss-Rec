@@ -1,3 +1,5 @@
+tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","text":" | "},{"color":"#b700ff","text":"[Function]"},{"color":"#ffffff","text":" | "},{"color":"#00ff22","selector":"@s"},{"color":"#ffffff","text":" | "},{"color":"#00f7ff","text":"shards/give_shard/pulse"}]
+
 # Gem Description:
 # Flux gem shoots out a powerfull warden beam dealing up to 4 hearts
 # Upgraded shoots warden beam dealing 6 hearts 
