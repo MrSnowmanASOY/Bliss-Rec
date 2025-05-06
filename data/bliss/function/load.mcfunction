@@ -8,3 +8,5 @@ tellraw @a[team=debug] {text:"Click this message to leave debug mode! (requires 
 team add debug
 team modify debug color red
 team modify debug prefix "[DEBUG ENABLED] "
+
+scoreboard objectives add Timer dummy

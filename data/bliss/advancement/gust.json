@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data":"{gust_use:true}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "bliss:shards/shard_powers/gust"
+    }
+}
