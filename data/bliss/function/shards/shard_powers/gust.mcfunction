@@ -10,4 +10,4 @@ execute anchored eyes run summon minecraft:armor_stand ~ ~0.6325 ~ {Invisible:tr
 execute anchored eyes run summon minecraft:armor_stand ~ ~0.6325 ~ {Invisible:true,DeathTime:40,Health:0f,Silent:true,NoAI:true,active_effects:[{id:"minecraft:wind_charged",Amplifier:1,Duration:1}]}
 
 # Add Cooldown (In Ticks [x20 seconds])
-scoreboard players add @s Timer 40
+scoreboard players add @s Timer 100

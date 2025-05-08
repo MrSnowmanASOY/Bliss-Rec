@@ -33,6 +33,8 @@ execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^18 0.2 0.2 0.
 execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^19 0.2 0.2 0.2 0 10 force
 execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^20 0.2 0.2 0.2 0 10 force
 
+
+
 # Make the damage bubbles
 
 # execute at @s as @s anchored eyes positioned ^ ^ ^1 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
@@ -61,4 +63,4 @@ execute at @s as @s anchored eyes positioned ^ ^ ^20 run execute as @e[distance=
 execute anchored eyes positioned ^ ^ ^0.5 run summon minecraft:armor_stand ~ ~-1 ~ {Invisible:true,DeathTime:40,Health:0f,Silent:true,NoAI:true,active_effects:[{id:"minecraft:wind_charged",Amplifier:50,Duration:1}]}
 
 # Add Cooldown (In Ticks [x20 seconds])
-scoreboard players add @s Timer 40
+scoreboard players add @s Timer 200

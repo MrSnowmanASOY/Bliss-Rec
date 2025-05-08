@@ -5,6 +5,10 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 # Upgraded gives strength 3 for 30s 
 # Downgraded gives strength 1 for 10s 
 
+effect give @s strength 30 4 true
+effect give @s darkness 30 0 true
+effect give @s resistance 30 3 true
+effect give @s slowness 30 9 true
 
 # Add Cooldown (In Ticks [x20 seconds])
 scoreboard players add @s Timer 1200

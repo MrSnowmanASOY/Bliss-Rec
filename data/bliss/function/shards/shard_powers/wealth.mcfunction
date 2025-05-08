@@ -5,4 +5,4 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 execute at @s as @a[distance=..10] run effect give @s hero_of_the_village 120 4 true
 
 # Add Cooldown (In Ticks [x20 seconds])
-scoreboard players add @s Timer 120
+scoreboard players add @s Timer 2400

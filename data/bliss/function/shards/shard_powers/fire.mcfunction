@@ -5,6 +5,7 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 # Upgraded gives fire resistance 2 minutes and regen 3 for 10s 
 # Downgraded gives fire resistance for 30s 
 
+effect give @s fire_resistance 60 0 true
 
 # Add Cooldown (In Ticks [x20 seconds])
-scoreboard players add @s Timer 1200
+scoreboard players add @s Timer 2400
