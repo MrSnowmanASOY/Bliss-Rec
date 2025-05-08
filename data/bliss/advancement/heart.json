@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "bliss:shards/shard_powers/heart"
+        "function": "bliss:main_functions/shard_check"
     }
 }

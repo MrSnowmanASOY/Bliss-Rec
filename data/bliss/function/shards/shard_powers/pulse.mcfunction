@@ -12,8 +12,8 @@ execute at @s run playsound minecraft:entity.warden.sonic_boom master @a ^ ^ ^15
 execute at @s run playsound minecraft:entity.warden.sonic_boom master @a ^ ^ ^20 100 0
 
 # Make the particles 
-execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^1 0.2 0.2 0.2 0 10 force
-execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^2 0.2 0.2 0.2 0 10 force
+# execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^1 0.2 0.2 0.2 0 10 force
+# execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^2 0.2 0.2 0.2 0 10 force
 execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^3 0.2 0.2 0.2 0 10 force
 execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^4 0.2 0.2 0.2 0 10 force
 execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^5 0.2 0.2 0.2 0 10 force
@@ -35,10 +35,10 @@ execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^20 0.2 0.2 0.
 
 # Make the damage bubbles
 
-execute at @s as @s anchored eyes positioned ^ ^ ^1 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^2 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
+# execute at @s as @s anchored eyes positioned ^ ^ ^1 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
+# execute at @s as @s anchored eyes positioned ^ ^ ^2 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
 
-execute at @s as @s anchored eyes positioned ^ ^ ^3 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^3 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^4 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^5 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
 execute at @s as @s anchored eyes positioned ^ ^ ^6 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom

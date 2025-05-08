@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "bliss:shards/shard_powers/gust"
+        "function": "bliss:main_functions/shard_check"
     }
 }

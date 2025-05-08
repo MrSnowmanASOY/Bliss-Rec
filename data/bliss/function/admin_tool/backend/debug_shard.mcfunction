@@ -4,7 +4,6 @@ execute as @s[team=!debug] run tellraw @a[team=debug] [{"color":"#ff0000","text"
 
 scoreboard players set @s[team=debug] Timer 5
 tellraw @s[team=!debug] {"color":"red","text":"You must be on the debug team to use this shard."}
-tellraw @s[team=!debug] {"color":"red","text":"As a result of not being on the debug team the shard has been taken away."}
-tellraw @s[team=!debug] {"color":"red","text":"The debug team has been notified."}
+tellraw @s[team=!debug] {"color":"red","text":"Shard Removed and team notified."}
 clear @s[team=!debug] minecraft:test_block
 
