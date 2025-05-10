@@ -2,3 +2,4 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 
 # Gem Description:
 # Does Nothing Special
+function bliss:player_changes/player_assign_random
