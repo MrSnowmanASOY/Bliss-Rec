@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "bliss:main_functions/shard_check"
+        "function": "bliss:shards/shard_powers/base"
     }
 }

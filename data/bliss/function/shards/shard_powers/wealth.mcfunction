@@ -2,7 +2,11 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 
 # Wealth Gem
 
-execute at @s as @a[distance=..10] run effect give @s hero_of_the_village 120 4 true
+execute at @s as @a[distance=..20,limit=5,sort=nearest] run effect give @s hero_of_the_village 120 4 true
+execute at @s as @a[distance=..20,limit=5,sort=nearest] run effect give @s luck 120 4 true
+
+# Apply Flare
+function bliss:shards/shard_flare/wealth_flare
 
 # Add Cooldown (In Ticks [x20 seconds])
 scoreboard players add @s Timer 2400

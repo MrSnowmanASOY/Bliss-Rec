@@ -9,3 +9,5 @@ effect give @s fire_resistance 60 0 true
 
 # Add Cooldown (In Ticks [x20 seconds])
 scoreboard players add @s Timer 2400
+
+playsound item.flintandsteel.use master @s ~ ~ ~ 1 1 1

@@ -10,7 +10,7 @@ execute positioned 0.0 0 0.0 run summon marker ^ ^ ^2 {Tags:["direction"]}
 
 # summon the projectile entity
 # When using a projectile, you want to summon it in front of the player so it doesn't hit the player themselves
-execute as @s at @s run execute positioned ~0 ~1.5 ~0 run summon arrow ^ ^0.5 ^ {Tags:["projectile"],damage:2,PierceLevel:5,Glowing:true}
+execute as @s at @s run execute positioned ~0 ~1.5 ~0 run summon arrow ^ ^0.5 ^1 {Tags:["projectile"],damage:2,Glowing:true}
 
 # copy the markers position relative to world origin to the arrows motion tag
 data modify entity @e[type=arrow,tag=projectile,limit=1] Motion set from entity @e[type=marker,tag=direction,limit=1] Pos
@@ -25,3 +25,6 @@ scoreboard players add @s Timer 0
 
 # player arrow protection
 # execute anchored eyes as @s at @s run kill @e[type=minecraft:arrow,distance=..5,tag=astra_arrow,nbt={inGround:false}]
+
+# Flare
+execute as @s at @s anchored feet positioned ~ ~-0.8 ~ facing ^ ^ ^ run function bliss:shards/shard_flare/astra_flare

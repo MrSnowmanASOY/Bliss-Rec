@@ -5,7 +5,9 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 # Upgraded speed gem gives speed 3 for 30s 
 # Downgraded speed gem gives speed 1 for 10s 
 
-effect give @s speed 15 49 true
+effect give @s speed 15 4 true
 
 # Add Cooldown (In Ticks [x20 seconds])
-scoreboard players add @s Timer 1200
+scoreboard players add @s Timer 400
+
+playsound minecraft:ui.toast.in master @s ~ ~ ~ 100 1 1

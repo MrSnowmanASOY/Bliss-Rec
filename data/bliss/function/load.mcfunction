@@ -1,4 +1,4 @@
-tellraw @a {"color":"gold","text":"Loaded Bliss 0.0.8"}
+tellraw @a {"color":"gold","text":"Loaded Bliss 0.1.5"}
 tellraw @a {"color":"gold","text":"Enjoy your shards"}
 
 tellraw @a[team=debug] "You are in debug mode!"
@@ -14,3 +14,6 @@ team modify debug prefix "*"
 
 scoreboard objectives add Timer dummy
 scoreboard players set random-8 Timer 0
+
+scoreboard objectives add playTime minecraft.custom:minecraft.play_time
+scoreboard objectives add timeSinceLastDeath minecraft.custom:minecraft.time_since_death

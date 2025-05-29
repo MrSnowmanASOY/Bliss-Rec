@@ -2,4 +2,10 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 
 # Gem Description:
 # Does Nothing Special
+clear @s minecraft:test_block[minecraft:custom_data={base_use:true}]
+particle minecraft:totem_of_undying ~ ~2 ~ 0 0 0 1 3000 force
+particle minecraft:totem_of_undying ~ ~2 ~ 0 0 0 1 3000 force
+particle minecraft:totem_of_undying ~ ~2 ~ 0 0 0 1 3000 force
+playsound minecraft:item.totem.use master @s ~ ~ ~ 1 1 1
+playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 1 1 1
 function bliss:player_changes/player_assign_random
