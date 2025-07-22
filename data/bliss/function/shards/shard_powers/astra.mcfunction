@@ -10,10 +10,13 @@ execute positioned 0.0 0 0.0 run summon marker ^ ^ ^2 {Tags:["direction"]}
 
 # summon the projectile entity
 # When using a projectile, you want to summon it in front of the player so it doesn't hit the player themselves
-execute as @s at @s run execute positioned ~0 ~1.5 ~0 run summon arrow ^ ^0.5 ^1 {Tags:["projectile"],damage:2,Glowing:true}
+execute as @s at @s run execute positioned ~0 ~1.5 ~0 run summon arrow ^ ^0.5 ^1 {Tags:["projectile"],damage:5,Glowing:true,NoGravity:true}
 
 # copy the markers position relative to world origin to the arrows motion tag
 data modify entity @e[type=arrow,tag=projectile,limit=1] Motion set from entity @e[type=marker,tag=direction,limit=1] Pos
+
+# assign the player that shot the arrow
+execute as @e[type=arrow,tag=projectile] run data modify entity @s Owner set from entity @p UUID
 
 # clean up
 tag @e[tag=projectile] add astra_arrow
@@ -21,7 +24,7 @@ tag @e[tag=projectile] remove projectile
 kill @e[tag=direction]
 kill @e[type=minecraft:arrow,tag=astra_arrow,nbt={inGround:true}]
 
-scoreboard players add @s Timer 0
+scoreboard players add @s Timer 4
 
 # player arrow protection
 # execute anchored eyes as @s at @s run kill @e[type=minecraft:arrow,distance=..5,tag=astra_arrow,nbt={inGround:false}]

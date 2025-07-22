@@ -6,6 +6,7 @@ tellraw @a[team=debug] [{"color":"#ffd900","text":"[LOG]"},{"color":"#ffffff","t
 # Downgraded speed gem gives speed 1 for 10s 
 
 effect give @s speed 15 4 true
+effect give @s dolphins_grace 15 0 true
 
 # Add Cooldown (In Ticks [x20 seconds])
 scoreboard players add @s Timer 400

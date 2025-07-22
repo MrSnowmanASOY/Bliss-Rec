@@ -40,24 +40,24 @@ execute at @s anchored eyes run particle minecraft:sonic_boom ^ ^ ^20 0.2 0.2 0.
 # execute at @s as @s anchored eyes positioned ^ ^ ^1 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
 # execute at @s as @s anchored eyes positioned ^ ^ ^2 run execute as @e[distance=..1] run damage @s 25 bliss:player_boom
 
-execute at @s as @s anchored eyes positioned ^ ^ ^3 run execute as @e[distance=..1] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^4 run execute as @e[distance=..2] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^5 run execute as @e[distance=..2] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^6 run execute as @e[distance=..2] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^7 run execute as @e[distance=..2] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^8 run execute as @e[distance=..2] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^9 run execute as @e[distance=..2] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^10 run execute as @e[distance=..2] run damage @s 24 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^11 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^12 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^13 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^14 run execute as @e[distance=..2] run damage @s 15 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^15 run execute as @e[distance=..2] run damage @s 15 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^16 run execute as @e[distance=..2] run damage @s 12 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^17 run execute as @e[distance=..2] run damage @s 12 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^25 run execute as @e[distance=..2] run damage @s 10 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^19 run execute as @e[distance=..2] run damage @s 10 bliss:player_boom
-execute at @s as @s anchored eyes positioned ^ ^ ^20 run execute as @e[distance=..2] run damage @s 10 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^3 run execute as @e[distance=..1] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^4 run execute as @e[distance=..2] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^5 run execute as @e[distance=..2] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^6 run execute as @e[distance=..2] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^7 run execute as @e[distance=..2] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^8 run execute as @e[distance=..2] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^9 run execute as @e[distance=..2] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^10 run execute as @e[distance=..2] run damage @s 45 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^11 run execute as @e[distance=..2] run damage @s 40 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^12 run execute as @e[distance=..2] run damage @s 40 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^13 run execute as @e[distance=..2] run damage @s 40 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^14 run execute as @e[distance=..2] run damage @s 35 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^15 run execute as @e[distance=..2] run damage @s 35 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^16 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^17 run execute as @e[distance=..2] run damage @s 25 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^25 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^19 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
+execute at @s as @s anchored eyes positioned ^ ^ ^20 run execute as @e[distance=..2] run damage @s 20 bliss:player_boom
 
 # blast the player back
 execute anchored eyes positioned ^ ^ ^0.5 run summon minecraft:armor_stand ~ ~-1 ~ {Invisible:true,DeathTime:40,Health:0f,Silent:true,NoAI:true,active_effects:[{id:"minecraft:wind_charged",Amplifier:50,Duration:1}]}

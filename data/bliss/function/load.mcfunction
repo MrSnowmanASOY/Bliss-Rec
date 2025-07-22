@@ -1,4 +1,4 @@
-tellraw @a {"color":"gold","text":"Loaded Bliss 0.1.5"}
+tellraw @a {"color":"gold","text":"Loaded Bliss 0.1.6"}
 tellraw @a {"color":"gold","text":"Enjoy your shards"}
 
 tellraw @a[team=debug] "You are in debug mode!"

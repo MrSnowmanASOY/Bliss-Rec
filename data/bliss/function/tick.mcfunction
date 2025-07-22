@@ -1,3 +1,4 @@
+# Cooldowns
 execute as @a[scores={Timer=2400}] run title @s actionbar "2 Minutes till shard recharge..."
 execute as @a[scores={Timer=1200}] run title @s actionbar "1 Minute till shard recharge..."
 execute as @a[scores={Timer=600}] run title @s actionbar "30 Seconds till shard recharge..."
@@ -11,10 +12,13 @@ title @a[scores={Timer=1}] actionbar {"color":"aqua","text":"Shard Recharged"}
 scoreboard players add random-8 Timer 1
 execute if score random-8 Timer matches 9 run scoreboard players set random-8 Timer 1
 
+# Clear Wrong Shard from players to prevent confusion
 function bliss:shard_clear
 
+# Assign Random shard on first join
 execute as @a[scores={playTime=1}] run function bliss:player_changes/player_assign_random
 
+# Give shard on death (death and playtime are the same when first joining so make sure they dont overlap when giving shard)
 execute as @a[tag=astra_player,scores={timeSinceLastDeath=1,playTime=10..}] run function bliss:shards/give_shard/astra
 execute as @a[tag=fire_player,scores={timeSinceLastDeath=1,playTime=10..}] run function bliss:shards/give_shard/fire
 execute as @a[tag=gust_player,scores={timeSinceLastDeath=1,playTime=10..}] run function bliss:shards/give_shard/gust
@@ -24,11 +28,14 @@ execute as @a[tag=speed_player,scores={timeSinceLastDeath=1,playTime=10..}] run 
 execute as @a[tag=strength_player,scores={timeSinceLastDeath=1,playTime=10..}] run function bliss:shards/give_shard/strength
 execute as @a[tag=wealth_player,scores={timeSinceLastDeath=1,playTime=10..}] run function bliss:shards/give_shard/wealth
 
+# give reroll recipe on first join
 recipe give @a[scores={playTime=1}] bliss:shard_reroll_craft
 
-# Shard Flare
+# Shard Flares
 execute as @a[scores={Timer=1200..},tag=fire_player] at @s run particle minecraft:flame ~ ~ ~ 0.2 0 0.2 0 5 force
 execute as @a[scores={Timer=300..},tag=speed_player] at @s run particle minecraft:block{block_state:"minecraft:redstone_block"} ~ ~ ~ 0.2 0 0.2 0 10 force
 execute as @a[scores={Timer=1140..},tag=strength_player] at @s positioned ~ ~0.5 ~ run function bliss:shards/shard_flare/strength_flare
 execute as @a[scores={Timer=1140..},tag=strength_player] at @s run tp @s @s
+
+# Long Lasting effects of shards
 execute as @a[scores={Timer=1300..},tag=fire_player] at @s run setblock ~ ~ ~ fire keep
